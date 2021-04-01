@@ -14,7 +14,6 @@ public class HandPresence : MonoBehaviour
     GameObject m_spawnedController;
     GameObject m_spawnedHandModel;
 
-    // Start is called before the first frame update
     void Start()
     {
         var _devices = new List<InputDevice>();
@@ -38,22 +37,33 @@ public class HandPresence : MonoBehaviour
                 m_spawnedController = Instantiate(m_controllerPrefabs[0], transform);
             }
 
-            m_spawnedHandModel = Instantiate(m_handModelPrefab, transform);
+            if (!showController)
+                m_spawnedHandModel = Instantiate(m_handModelPrefab, transform);
+
+            if (showController)
+            {
+                m_spawnedHandModel.SetActive(false);
+                m_spawnedController.SetActive(true);
+            }
+            else
+            {
+                m_spawnedHandModel.SetActive(true);
+                m_spawnedController.SetActive(false);
+            }
         }
     }
 
     private void Update()
     {
-        if (showController)
-        {
-            m_spawnedHandModel.SetActive(false);
-            m_spawnedController.SetActive(true);
-        }
-
-        else
-        {
-            m_spawnedHandModel.SetActive(true);
-            m_spawnedController.SetActive(false);
-        }
+        //if (showController)
+        //{
+        //    m_spawnedHandModel.SetActive(false);
+        //    m_spawnedController.SetActive(true);
+        //}
+        //else
+        //{
+        //    m_spawnedHandModel.SetActive(true);
+        //    m_spawnedController.SetActive(false);
+        //}
     }
 }

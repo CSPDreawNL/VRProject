@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 4854580672716927503}
   - component: {fileID: 5830594769305108329}
   m_Layer: 0
-  m_Name: ball
+  m_Name: TennisBall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -94,7 +94,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 683183471450858226}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 50c80ee8c1e859040bd18434ae3a4c00, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
