@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6657391640085954903}
   - component: {fileID: 6657391640085954902}
   - component: {fileID: 6657391640085954901}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -104,7 +104,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6657391640179009249}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ShootingPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 6657391640736416889}
   - component: {fileID: 6657391640736416888}
   - component: {fileID: 6657391640736416887}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -232,7 +232,7 @@ GameObject:
   - component: {fileID: 6657391641577479915}
   - component: {fileID: 6657391641577479914}
   - component: {fileID: 6657391641577479913}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}

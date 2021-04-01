@@ -5,13 +5,14 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     [SerializeField] float m_lifeTime = 5;
+    [SerializeField] bool m_isBullet;
     private void Start()
     {
-        StartCoroutine(DestroyItself());
+        Destroy(gameObject, m_lifeTime);
     }
-    IEnumerator DestroyItself()
+    private void OnCollisionEnter(Collision collision)
     {
-        yield return new WaitForSeconds(m_lifeTime);
-        Destroy(gameObject);
+        if (m_isBullet)
+            Destroy(gameObject);
     }
 }
